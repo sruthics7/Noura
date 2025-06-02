@@ -1877,17 +1877,17 @@ transform-style: preserve-3d;
   color: white;
 }
 .cloud-bubble {
-  position: relative;
   background: white;
-  padding: 40px 30px;
+  padding: 50px 40px;
   max-width: 500px;
   margin: 40px auto;
   color: #000;
   font-size: 1.2rem;
   line-height: 1.6;
-  border-radius: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  clip-path: path("M90 30 C 80 10, 60 10, 50 30 C 30 10, 10 30, 20 50 C 5 70, 20 90, 40 85 C 50 105, 80 105, 90 85 C 110 90, 120 70, 110 50 C 120 30, 100 10, 90 30 Z");
 }
+
 
 /* Tail at the bottom center */
 .cloud-bubble::after {
