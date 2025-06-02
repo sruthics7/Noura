@@ -1877,16 +1877,20 @@ transform-style: preserve-3d;
   color: white;
 }
 .cloud-bubble {
-  background: white;
-  padding: 50px 40px;
-  max-width: 500px;
+  background: url('https://www.svgrepo.com/show/503508/cloud.svg') no-repeat center/cover;
+  padding: 60px 50px;
+  max-width: 600px;
   margin: 40px auto;
   color: #000;
   font-size: 1.2rem;
   line-height: 1.6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  clip-path: path("M90 30 C 80 10, 60 10, 50 30 C 30 10, 10 30, 20 50 C 5 70, 20 90, 40 85 C 50 105, 80 105, 90 85 C 110 90, 120 70, 110 50 C 120 30, 100 10, 90 30 Z");
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 /* Tail at the bottom center */
