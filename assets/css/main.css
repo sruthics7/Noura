@@ -1042,6 +1042,12 @@ section,
   font-weight: 700;
   color: #f1f7fc;
   font-size: clamp(26px, 10vw, 120px);
+  display: flex;
+  align-items: center;    /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  min-height: 100vh;      /* optional: makes the section full-height */
+  text-align: center;     /* center text inside h4 */
+
 }
 
 .hero .welcome h4 {
@@ -1908,4 +1914,37 @@ transform-style: preserve-3d;
   font-size: 1.1rem;
   line-height: 1.5;
   color: #333;
+}
+.are-you-section {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.are-you {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFD700;
+  line-height: 1;
+}
+
+.role-options p {
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.role-options strong {
+  font-size: 1.2rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .are-you {
+    font-size: 2rem;
+  }
+
+  .are-you-section .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
