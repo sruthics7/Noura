@@ -924,9 +924,10 @@ section,
   background-size: contain;
   left: 0;
   right: 0;
-  top: -35px; /* Lifted further */
+  top: -13px; /* Slightly lowered */
   margin: auto;
 }
+
 
 
 
@@ -987,7 +988,7 @@ section,
   background-size: contain;
   left: 0;
   right: 0;
-  top: -35px; /* Lifted further */
+  top: -25px; /* Lifted further */
   margin: auto;
 }
 
@@ -1041,13 +1042,12 @@ section,
 
   .banner_text img {
     width: 200px;
-    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
 
   .banner_text h4 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
     white-space: normal;
   }
