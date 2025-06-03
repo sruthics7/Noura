@@ -920,13 +920,14 @@ section,
   display: block;
   width: 200px;
   height: 180px;
-  background: url('/assets/img/underline.png') no-repeat center;
+  background: url('../img/underline.png') no-repeat center;
   background-size: contain;
   left: 0;
   right: 0;
-  top: -20px; /* Lift it up */
+  top: -35px; /* Lifted further */
   margin: auto;
 }
+
 
 
 .section-title p {
@@ -986,7 +987,7 @@ section,
   background-size: contain;
   left: 0;
   right: 0;
-  top: -30px; /* Lift it up */
+  top: -35px; /* Lifted further */
   margin: auto;
 }
 
