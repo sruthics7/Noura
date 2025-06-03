@@ -881,10 +881,14 @@ section,
   position: relative;
   /* background-image: url(../img/blob.png); */
   background-repeat: no-repeat;
-  background-position: center; /* This centers the background image */
-  background-size: contain;    /* Optional: ensures full image fits */
-   background-size: 100px 100px; 
-   background-position: 35% 10%;   /* Moves right compared to 30% */       /* 30% from left, 10% from top */
+  background-position: center;
+  /* This centers the background image */
+  background-size: contain;
+  /* Optional: ensures full image fits */
+  background-size: 100px 100px;
+  background-position: 35% 10%;
+  /* Moves right compared to 30% */
+  /* 30% from left, 10% from top */
 }
 
 
@@ -897,7 +901,7 @@ section,
 }
 
 .section-title h2:before {
-  
+
   content: "";
   position: absolute;
   display: block;
@@ -933,12 +937,16 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
-   /* background-image: url(../img/blob.png); */
+  /* background-image: url(../img/blob.png); */
   background-repeat: no-repeat;
-  background-position: center; /* This centers the background image */
-  background-size: contain;    /* Optional: ensures full image fits */
- background-position: 65% 1%;   /* Moves right compared to 30% */       /* 30% from left, 10% from top */
- background-size: 100px 100px; 
+  background-position: center;
+  /* This centers the background image */
+  background-size: contain;
+  /* Optional: ensures full image fits */
+  background-position: 65% 1%;
+  /* Moves right compared to 30% */
+  /* 30% from left, 10% from top */
+  background-size: 100px 100px;
 
 
 }
@@ -1018,17 +1026,32 @@ section,
     border-radius: 0px;
   }
 
-  .banner_text img {
-    width: 200px;
+  .banner_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
+  .banner_text img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .banner_text h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: normal;
+  }
 }
 
 
-.hero .banner_text {
-  width: 550px;
-  height: auto;
-}
+
+/* .hero .banner_text {
+  
+} */
 
 /* Tablets */
 
@@ -1037,28 +1060,18 @@ section,
   z-index: 3;
 }
 
-.hero .welcome h1 {
-  margin: 0;
-  font-weight: 700;
-  color: #f1f7fc;
-  font-size: clamp(26px, 10vw, 120px);
-  display: flex;
-  align-items: center;    /* vertical centering */
-  justify-content: center; /* horizontal centering */
-  min-height: 100vh;      /* optional: makes the section full-height */
-  text-align: center;     /* center text inside h4 */
 
-}
 
 .hero .welcome h4 {
-  font-size: clamp(11px, 2vw, 24px);
-  /* larger minimum size for better readability */
+  font-size: clamp(17px, 2vw, 24px); /* Responsive font size */
   margin: 0;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  /* adds contrast against light backgrounds */
+           /* Prevent spill */
+  text-overflow: ellipsis;    /* Add ... if overflow */
 }
+
 
 
 .hero .content {
@@ -1246,17 +1259,17 @@ section,
 }
 
 .services .service-item .icon {
- margin: 0 auto;
-width: 64px;
-height: 64px;
-background: var(--nav-hover-color);
-border-radius: 60% 40% 35% 65% / 50% 55% 45% 60%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
-transition: 0.3s;
-transform-style: preserve-3d;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: var(--nav-hover-color);
+  border-radius: 60% 40% 35% 65% / 50% 55% 45% 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
 
 }
 
@@ -1401,20 +1414,20 @@ transform-style: preserve-3d;
   padding: 15px;
   color: var(--default-color);
   border-radius: 0;
- 
+
 }
 
 .departments .nav-link:hover {
-  
-         color: var(--background-color);
-        background: var(--accent-color);
-        padding: 15px;
+
+  color: var(--background-color);
+  background: var(--accent-color);
+  padding: 15px;
 }
 
 .departments .nav-link.active {
-    color: var(--background-color);
-    background: var(--accent-color);
-  }
+  color: var(--background-color);
+  background: var(--accent-color);
+}
 
 .departments .tab-pane.active {
   animation: fadeIn 0.5s ease-out;
@@ -1879,9 +1892,11 @@ transform-style: preserve-3d;
 .starter-section {
   /* Add your styles here */
 }
-.contact-content{
+
+.contact-content {
   color: white;
 }
+
 .cloud-bubble {
   position: relative;
   background: white;
@@ -1915,6 +1930,7 @@ transform-style: preserve-3d;
   line-height: 1.5;
   color: #333;
 }
+
 .are-you-section {
   color: #fff;
   font-family: 'Poppins', sans-serif;
