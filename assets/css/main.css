@@ -900,32 +900,34 @@ section,
   position: relative;
 }
 
-.section-title h2:before {
-
+/* .section-title h2::before {
   content: "";
   position: absolute;
   display: block;
-  width: 160px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  width: 260px;
+  height: 100px; 
+  background: url('../img/underline.png') no-repeat center;
+  background-size: contain;
   left: 0;
   right: 0;
-  bottom: 1px;
+  bottom: 8px;
   margin: auto;
-}
+} */
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--accent-color);
+  width: 200px;
+  height: 180px;
+  background: url('/assets/img/underline.png') no-repeat center;
+  background-size: contain;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: -20px; /* Lift it up */
   margin: auto;
 }
+
 
 .section-title p {
 
@@ -961,7 +963,7 @@ section,
 
 }
 
-.section-title-white h2:before {
+/* .section-title-white h2:before {
   content: "";
   position: absolute;
   display: block;
@@ -972,20 +974,23 @@ section,
   right: 0;
   bottom: 1px;
   margin: auto;
-}
+} */
 
 .section-title-white h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--surface-color);
+  width: 200px;
+  height: 180px;
+  background: url('/assets/img/underline.png') no-repeat center;
+  background-size: contain;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: -30px; /* Lift it up */
   margin: auto;
 }
+
+
 
 .section-title-white p {
   margin-bottom: 0;
