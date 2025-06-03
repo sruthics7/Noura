@@ -1879,29 +1879,27 @@ transform-style: preserve-3d;
 .cloud-bubble {
   position: relative;
   background: white;
-  padding: 50px 40px;
-  max-width: 500px;
-  margin: 40px auto;
-  color: #000;
-  font-size: 1.2rem;
+  color: black;
+  padding: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
   line-height: 1.6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  clip-path: path("M50,0 Q0,50 30,100 Q10,180 50,220 Q20,250 60,260 Q100,280 250,270 Q380,270 400,220 Q430,180 400,100 Q410,50 350,20 Q300,0 250,0 Q200,0 150,0 Q100,0 50,0 Z");
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
 }
 
-/* Tail shape – optional if you want it more distinct */
 .cloud-bubble::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -20px;
-  left: 100px;
-  width: 80px;
-  height: 60px;
-  background: white;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  transform: rotate(30deg);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  bottom: -30px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
 }
+
 
 
 
